@@ -39,7 +39,7 @@ describe('sauce', () => {
     cy.get('[data-qa="login-button"]').should('be.visible').click()
   })
   
-  it.('Prueba login correo y password incorrecto', () => {
+  it('Prueba login correo y password incorrecto', () => {
     cy.get('.shop-menu > .nav > :nth-child(4) > a').click()
     cy.get('[data-qa="signup-name"]').type('menganito')
     cy.get('[data-qa="signup-email"]').type('menganitox#gmail.com')
